@@ -15,9 +15,10 @@ public class Tiger extends Animal{
         this.water -= 80;
         consumedWater += 80;
         System.out.println("Nakarmiono tygrysa. Jedzenie: 200, woda: 80.");
-        System.out.println(toString());
+        System.out.println(this);
     }
 
+    @Override
     public String toString() {
         return super.toString() + ". Zużyto jedzenia: " + consumedFood + ", Zużyto wody: " + consumedWater;
     }

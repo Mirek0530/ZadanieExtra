@@ -15,9 +15,10 @@ public class Elephant extends Animal {
         this.water -= 300;
         consumedWater += 300;
         System.out.println("Nakarmiono słonia. Jedzenie: 400, woda: 300.");
-        System.out.println(toString());
+        System.out.println(this);
     }
 
+    @Override
     public String toString() {
         return super.toString() + ". Zużyto jedzenia: " + consumedFood + ", zużyto wody: " + consumedWater;
     }

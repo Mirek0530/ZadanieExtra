@@ -14,6 +14,7 @@ public class Animal {
     public void feed() {
         this.food -= 200;
         this.water -= 100;
+        System.out.println("Nakarmiono zwierzę. Jedzenie: 200, woda: 100.");
         System.out.println(toString());
     }
 
